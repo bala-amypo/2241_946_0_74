@@ -21,5 +21,14 @@ public class Student{
         return name;
 
     }
-    
+
+    public String setname(String name){
+        this.name=name;
+    }
+
+    public String getemail(){
+        return email;
+    }
+
+    public String setemail(S)
 }
