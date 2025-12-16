@@ -30,5 +30,25 @@ public class Student{
         return email;
     }
 
-    public String setemail(S)
+    public String setemail(String email){
+        this.email=email;
+    }
+
+    public void float getcgpa(){
+        return cgpa;
+    }
+
+    public void setcgpa(float cgpa){
+        this.cgpa=cgpa;
+
+    }
+    
+    public Student(long id, String name, String email,float cgpa){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.cgpa=cgpa;
+    }
+
+    p
 }
