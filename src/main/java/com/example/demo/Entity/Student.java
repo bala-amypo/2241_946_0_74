@@ -50,5 +50,7 @@ public class Student{
         this.cgpa=cgpa;
     }
 
-    p
+    public Student(){
+        
+    }
 }
