@@ -1,7 +1,16 @@
 
 package com.example.demo.entity;
 
+@entity
 public class Student{
+
+    @id
+    private int id;
+
+    public class Student{
+
+    
+   
     private long id;
     private String name;
     private String email;
