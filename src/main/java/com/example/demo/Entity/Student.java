@@ -1,65 +1,48 @@
 
 package com.example.demo.entity;
-
-@entity
+import jakarta.persistence.*;
+@Entity
 public class Student{
-
-    @id
-    private int id;
-
-    public class Student{
-
-    
-   
-    private long id;
-    private String name;
-    private String email;
+    @Id
+    private Long id;
+    private String stuname;
+    private String stuemail;
     private float cgpa;
-
-
-    public void long getId(){
+    public Long getId(){
         return id;
     }
-
-    public void setId(long id){
+    public void setId(Long id){
         this.id=id;
-
     }
-
-    public String getname(){
-        return name;
-
+    public String getStuname(){
+        return stuname;
     }
-
-    public String setname(String name){
-        this.name=name;
+    public void setStuname(String stuname){
+        this.stuname=stuname;
     }
-
-    public String getemail(){
-        return email;
+    public String getStuemail(){
+        return stuemail;
     }
-
-    public String setemail(String email){
-        this.email=email;
+    public void setStuemail(String stuemail){
+        this.stuemail=stuemail;
     }
-
-    public void float getcgpa(){
+    public float getCgpa(){
         return cgpa;
     }
-
-    public void setcgpa(float cgpa){
+    public void setCgpa(float cgpa){
         this.cgpa=cgpa;
-
     }
-    
-    public Student(long id, String name, String email,float cgpa){
-        this.id=id;
-        this.name=name;
-        this.email=email;
-        this.cgpa=cgpa;
+
+    public Student(Long id, String stuname, String stuemail, float cgpa) {
+        this.id = id;
+        this.stuname = stuname;
+        this.stuemail = stuemail;
+        this.cgpa = cgpa;
     }
 
     public Student(){
-        
+
     }
+
+
 }
